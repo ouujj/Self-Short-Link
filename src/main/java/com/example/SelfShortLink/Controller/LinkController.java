@@ -15,13 +15,16 @@ import com.example.SelfShortLink.Sevice.LinkEnAndDe;
 import com.example.SelfShortLink.Repository.LinkRepository;
 
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
 
+
 @RestController
+@CrossOrigin(origins =  "*")
 public class LinkController {
     public static final String domainName = "http://localhost:8080/";
 
